@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Yakuza</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<style type="text/css">
+	body {
+		background-image: url("/assets/img/top_image.png");
+	    background-repeat: no-repeat;
+	    background-position-y: top;
+	    background-position-x: center;
+	}
+	.body-bg {
+		background-image: url("/assets/img/bg_1.png"), url("/assets/img/bg_2.png");
+	    background-repeat: no-repeat, repeat, repeat, repeat;
+	    background-position-y: 0, 77px;
+	    position: absolute;
+	    width: 100%;
+	    height: 306%;
+	    top: 528px;
+	    left: 0;
+	    z-index: -1;
+	}
+</style>
+<body>
+  <app-root></app-root>
+  <!-- <div class="body-bg"></div> -->
+  <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+</html>

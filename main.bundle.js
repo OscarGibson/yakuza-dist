@@ -123,12 +123,12 @@ var Globals = Globals_1 = (function () {
     };
     return Globals;
 }());
-Globals.local_domain = 'http://localhost:4200';
-Globals.backend_domain = 'http://localhost:8000/backend';
-Globals._domain = 'http://localhost:8000/backend';
-// public static local_domain: string = 'http://www.yakuzalviv.com';
-// public static backend_domain: string = 'http://www.yakuzalviv.com/backend';
-// private static _domain: string = 'http://www.yakuzalviv.com/backend';
+// public static local_domain: string = 'http://localhost:4200';
+// public static backend_domain: string = 'http://localhost:8000/backend';
+// private static _domain: string = 'http://localhost:8000/backend';
+Globals.local_domain = 'http://www.yakuzalviv.com';
+Globals.backend_domain = 'http://www.yakuzalviv.com/backend';
+Globals._domain = 'http://www.yakuzalviv.com/backend';
 Globals._api_path = '/api/v1/';
 Globals.categories_get_path = Globals_1._get_path('category');
 Globals.order_post_path = Globals_1._get_path('order/');

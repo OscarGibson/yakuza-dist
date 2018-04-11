@@ -1187,26 +1187,28 @@ var HeaderComponent = (function () {
                 var category = _a[_i];
                 for (var _b = 0, _c = data['order_section']; _b < _c.length; _b++) {
                     var order_content = _c[_b];
-                    if (category.id == order_content.id) {
-                        _this.globals.order_content.push({
-                            "content": {
-                                "id": category.id,
-                                "title": order_content.title,
-                                "content": category.products,
-                            },
-                            "current_content": {
-                                'id': category.products[0].id,
-                                'title': category.products[0].title,
-                                'image': category.products[0].image,
-                                'price': category.products[0].price,
-                                'next_id': category.products.length > 0 ? 1 : 0,
-                                'prew_id': category.products.length - 1,
-                            }
-                        });
+                    if (category.id == order_content.related_categories[0]) {
+                        if (category.products[0]) {
+                            _this.globals.order_content.push({
+                                "content": {
+                                    "id": category.id,
+                                    "title": order_content.title,
+                                    "content": category.products,
+                                },
+                                "current_content": {
+                                    'id': category.products[0].id,
+                                    'title': category.products[0].title,
+                                    'image': category.products[0].image,
+                                    'price': category.products[0].price,
+                                    'next_id': category.products.length > 0 ? 1 : 0,
+                                    'prew_id': category.products.length - 1,
+                                }
+                            });
+                        }
                     }
                 }
             }
-            console.log(_this.globals.order_content);
+            // console.log(this.globals.order_content)
         }, function (error) {
             console.log('ERROR: ', error);
         });
